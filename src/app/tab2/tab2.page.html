@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LISTADO DE PRODUCTOS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">  
+  <app-explore-container name="prueba"></app-explore-container>
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-label>
+        <ion-item>
+        <ion-thumbnail>
+          <img src={{datosProducto.foto}} /></ion-thumbnail>
+          <h1>{{datosProducto.titulo}}</h1>
+          <ion-label>
+            <p>{{datosProducto.valoracion}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
